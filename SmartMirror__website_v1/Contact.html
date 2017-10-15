@@ -1,0 +1,86 @@
+<!--pozuam@gmail.com -->
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Smart mirror project, inteligentne lustro, smart lustro">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Smart-Mirror</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="http://www.smart-mirror.pl/">Smart-Mirror.pl</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="About.html">O projekcie</a></li>
+            <li class="active"><a href="Contact.html">Kontakt</a></li>
+          </ul>
+        </div>
+    </nav>
+    <div class="text-center">
+        <h2><b>Formularz kontaktowy</b></h2>
+    </div>
+    <div class="container">
+      <form id="contact-form" method="post" action="contact.php" role="form">
+        <div class="messages"></div>
+        <div class="controls">
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="form_name">Imię *</label>
+                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Podaj imię *" required="required" data-error="Imię jest wymagane">
+                      <div class="help-block with-errors"></div>
+                    </div>
+              </div>
+          </div>
+            <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_lastname">Nazwisko *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Podaj nazwisko *" required="required" data-error="Nazwisko jest wymagane">
+                    <div class="help-block with-errors"></div>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Podaj email *" required="required" data-error="Email jest wymagany">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label for="form_message">Wiadomość *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Wiadomość *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <input type="submit" class="btn btn-success btn-send" value="Wyślij">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <p class="text-muted"><strong>*</strong>Pola wymagane.</p>
+            </div>
+        </div>
+    </div>
+
+  </form>
+  </div>
+
+  </body>
+</html>
